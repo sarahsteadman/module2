@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Planner Home</title>
+    <meta name="description" content="A task planner that features a hungry dragon.">
+    <link type="text/css" rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Dragon Planner</h1>
+    </header>
+    <form id="task-form" class="hidden">
+        <fieldset id="form-inputs">
+            <legend>New Task</legend>
+            <label>Task <input type="text" class="form" id="text" placeholder="Enter a task" required></label>            
+            <label>Description <textarea class="form" id="description" placeholder="Enter a longer description if desired"></textarea></label>            
+            <label>Date Started <input type="date" class="form" id="date" ></label>            
+            <label>Date due <input type="date" class="form" id="due" ></label>                
+        </fieldset>
+        <button id="add-subTask" class="normal-button">Add a Subtask</button>
+        <button id="save" class="normal-button">Save</button>
+    </form>
+    <main>
+        <div id="planner">
+            <section id="task-list">
+                <h2>Task List</h2>
+                <button id="new-task" class="normal-button">New Task</button>
+            </section>
+            <div id="dragon-lair">
+                <img src="images/dragon-happy.png" alt="Happy dragon">
+            </div>
+            <section id="dragon-chat">
+                <h2>The dragon says...</h2>
+                <p id="dragon-text"></p>
+            </section>
+        </div>
+        <script src="scripts/subtask.js"></script>
+        <script src="scripts/task.js"></script>
+        <script src="scripts/main.js"></script>
+    </main>
+</body>
+</html>

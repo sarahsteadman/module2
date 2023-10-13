@@ -1,0 +1,129 @@
+h1, h2{
+    text-align: center;
+}
+/* dragon's background is C3F4EB */
+/* dragon's stomach is F6EE8F */
+/* 
+#FD4475
+#752872
+#FD9843
+#BBE55F
+#F6EE8F
+*/
+body{
+    background-color: #ADF2F7;
+    position: relative;
+}
+main{
+display: block;
+}
+#planner{
+    max-width: 1000px;
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+        "a b"
+        "a c";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    transition: transform .8s;
+}
+.normal-button{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    background-color: aliceblue;
+    color: rgb(153, 0, 255);
+    border:rgb(153, 0, 255) solid 2px;
+    border-radius: 7%;
+    padding: 6px 10px;
+    font-size: 1em;
+}
+button:hover{
+    color: blue;
+    border-color: blue;
+}
+label{
+    display: block;
+    background-color: #ADF2F7;
+    padding:5px;
+    margin: 5px;
+    border-radius: 7px;
+}
+.dropDown{
+    background-color: #ADF2F7;
+    border: none;
+    text-align: left;
+    padding: none;
+    margin:none;
+    position: relative;
+}
+.sub-div{
+    background-color: rgb(153, 0, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    width:98%;
+    padding: 3px;
+}
+.checked{
+    background-color: rgb(182, 188, 193);
+    text-decoration: line-through;
+    color: black;
+}
+img{
+    margin: 0  0 0 30px;
+    width: 280px;
+    border-radius: 50%;
+    border: 6px ridge goldenrod;
+}
+section {
+    border-radius: 3%;
+    background-color: aliceblue;
+    min-height: 200px;
+    padding: 0 25px;
+}
+#task-list{
+    grid-area: a;
+}
+#dragon-lair{
+    height:270px;
+    grid-area: b;
+}
+#dragon-chat{
+    grid-area: c;
+}
+/* form stuff  */
+.hidden {
+    display: none;
+}
+#form-inputs{
+    width: 40%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: none;
+}
+#description{
+    height: 150px;
+    width: 600px;
+}
+#form-inputs label{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+legend{
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    border: 1px solid black;
+}
+#save, #add-subTask{
+    margin: 5px auto;
+}
+.form{
+    font-size: 16px;
+}
